@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+  <!-- Definition of filters/gradients if needed -->
+  <defs>
+    <style>
+      .bireuen-text { font-family: 'Arial Black', 'Impact', 'Trebuchet MS', sans-serif; font-weight: 900; fill: #E50012; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Outer Pentagonal Shield Border (Black & Green) -->
+  <polygon points="250,15 475,185 415,535 85,535 25,185" fill="#FFFFFF" stroke="#101010" stroke-width="4" />
+  <polygon points="250,23 467,189 409,529 91,529 33,189" fill="none" stroke="#008837" stroke-width="3" />
+  
+  <!-- Green Bottom Half Fill -->
+  <clipPath id="shield-clip">
+    <polygon points="250,23 467,189 409,529 91,529 33,189" />
+  </clipPath>
+
+  <g clip-path="url(#shield-clip)">
+    <!-- Lower Green Area -->
+    <rect x="0" y="340" width="500" height="230" fill="#008837" />
+    <line x1="30" y1="340" x2="470" y2="340" stroke="#101010" stroke-width="2" />
+
+    <!-- 1. Top Green Bintang (Star) -->
+    <polygon points="250,32 256,50 275,50 260,61 265,79 250,68 235,79 240,61 225,50 244,50" fill="none" stroke="#008837" stroke-width="3.5" stroke-linejoin="round" />
+
+    <!-- 2. Rencong Kuning (Yellow Daggers) Top Left & Right -->
+    <!-- Left Rencong -->
+    <path d="M 235,95 C 190,85 150,110 125,142 C 160,115 200,102 230,105 Z" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    <!-- Right Rencong -->
+    <path d="M 265,95 C 310,85 350,110 375,142 C 340,115 300,102 270,105 Z" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+
+    <!-- 3. Timbangan Keadilan (Balance Scales) - Left & Right -->
+    <!-- Left Scale -->
+    <g id="scale-left">
+      <line x1="105" y1="135" x2="105" y2="240" stroke="#FACC15" stroke-width="3" />
+      <line x1="70" y1="240" x2="140" y2="240" stroke="#FACC15" stroke-width="4" />
+      <polygon points="70,240 105,190 140,240" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    </g>
+    <!-- Right Scale -->
+    <g id="scale-right">
+      <line x1="395" y1="135" x2="395" y2="240" stroke="#FACC15" stroke-width="3" />
+      <line x1="360" y1="240" x2="430" y2="240" stroke="#FACC15" stroke-width="4" />
+      <polygon points="360,240 395,190 430,240" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    </g>
+
+    <!-- 4. Padi (Golden Rice Stalk) - Left -->
+    <g id="padi-left">
+      <path d="M 185,320 C 170,250 160,180 205,115 C 195,140 180,220 185,320 Z" fill="#FACC15" stroke="#CA8A04" stroke-width="1" />
+      <!-- Paddy grains -->
+      <circle cx="198" cy="125" r="6" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="188" cy="140" r="6.5" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="182" cy="158" r="7" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="178" cy="178" r="7" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="175" cy="200" r="7.5" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="173" cy="222" r="8" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="173" cy="245" r="8" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="175" cy="268" r="8" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+      <circle cx="180" cy="290" r="8" fill="#FACC15" stroke="#101010" stroke-width="0.8" />
+    </g>
+
+    <!-- 5. Kapas (Cotton Stalk) - Right -->
+    <g id="kapas-right">
+      <path d="M 315,320 C 330,250 340,180 295,115 C 305,140 320,220 315,320 Z" fill="#008837" stroke="#101010" stroke-width="1" />
+      <!-- Cotton leaves/bolls -->
+      <path d="M 292,118 C 285,112 290,128 298,126 Z" fill="#008837" stroke="#101010" stroke-width="0.8" />
+      <circle cx="312" cy="140" r="7" fill="#008837" stroke="#101010" stroke-width="1" />
+      <circle cx="318" cy="162" r="7.5" fill="#008837" stroke="#101010" stroke-width="1" />
+      <circle cx="322" cy="185" r="8" fill="#008837" stroke="#101010" stroke-width="1" />
+      <circle cx="325" cy="208" r="8" fill="#008837" stroke="#101010" stroke-width="1" />
+      <circle cx="327" cy="232" r="8.5" fill="#008837" stroke="#101010" stroke-width="1" />
+      <circle cx="326" cy="255" r="8.5" fill="#008837" stroke="#101010" stroke-width="1" />
+      <circle cx="322" cy="278" r="8" fill="#008837" stroke="#101010" stroke-width="1" />
+    </g>
+
+    <!-- 6. Monumen Bireuen (Tugu Juang Biru & Laut) - Center -->
+    <g id="tugu-monumen">
+      <!-- Ocean Waves Base -->
+      <path d="M 185,340 C 210,305 290,305 315,340 Z" fill="#0082C8" stroke="#101010" stroke-width="1.5" />
+      <path d="M 195,330 Q 250,300 305,330" fill="none" stroke="#FFFFFF" stroke-width="2" />
+      <path d="M 205,320 Q 250,295 295,320" fill="none" stroke="#0082C8" stroke-width="2" />
+      <line x1="200" y1="335" x2="300" y2="335" stroke="#FFFFFF" stroke-width="1.5" />
+      <line x1="210" y1="325" x2="290" y2="325" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 2" />
+
+      <!-- Main Tugu Column (Blue Tugu) -->
+      <polygon points="243,105 257,105 264,300 236,300" fill="#0082C8" stroke="#101010" stroke-width="1.5" />
+      <!-- Monumen Top Flame / Crown -->
+      <path d="M 250,85 C 242,95 245,105 250,105 C 255,105 258,95 250,85 Z" fill="#101010" stroke="#101010" stroke-width="1" />
+    </g>
+
+    <!-- 7. Kubah Masjid (Mosque Domes) - Left & Right on Green Boundary -->
+    <!-- Left Mosque Dome -->
+    <g id="kubah-left">
+      <path d="M 70,340 C 70,285 150,285 150,340 Z" fill="#222222" stroke="#101010" stroke-width="1.5" />
+      <path d="M 110,270 C 106,280 114,280 110,270 Z" fill="#222222" stroke="#101010" stroke-width="1" />
+      <line x1="110" y1="265" x2="110" y2="275" stroke="#222222" stroke-width="2" />
+      <!-- Base Arches -->
+      <path d="M 75,340 Q 82,328 90,340 Q 97,328 105,340 Q 112,328 120,340 Q 127,328 135,340 Q 142,328 145,340" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    </g>
+    <!-- Right Mosque Dome -->
+    <g id="kubah-right">
+      <path d="M 350,340 C 350,285 430,285 430,340 Z" fill="#222222" stroke="#101010" stroke-width="1.5" />
+      <path d="M 390,270 C 386,280 394,280 390,270 Z" fill="#222222" stroke="#101010" stroke-width="1" />
+      <line x1="390" y1="265" x2="390" y2="275" stroke="#222222" stroke-width="2" />
+      <!-- Base Arches -->
+      <path d="M 355,340 Q 362,328 370,340 Q 377,328 385,340 Q 392,328 400,340 Q 407,328 415,340 Q 422,328 425,340" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    </g>
+
+    <!-- 8. Buku Terbuka (Open Book / Al-Qur'an/Kitab) -->
+    <g id="buku-terbuka">
+      <!-- Left Page -->
+      <path d="M 250,380 C 220,370 180,375 150,385 L 150,442 C 180,432 220,428 250,438 Z" fill="#FFFFFF" stroke="#101010" stroke-width="2" />
+      <!-- Right Page -->
+      <path d="M 250,380 C 280,370 320,375 350,385 L 350,442 C 320,432 280,428 250,438 Z" fill="#FFFFFF" stroke="#101010" stroke-width="2" />
+      <!-- Center Spine -->
+      <line x1="250" y1="380" x2="250" y2="438" stroke="#101010" stroke-width="2" stroke-dasharray="3 2" />
+      <!-- Page Details/Lines -->
+      <path d="M 165,395 C 190,388 220,385 240,392" fill="none" stroke="#888888" stroke-width="1" />
+      <path d="M 165,408 C 190,401 220,398 240,405" fill="none" stroke="#888888" stroke-width="1" />
+      <path d="M 260,392 C 280,385 310,388 335,395" fill="none" stroke="#888888" stroke-width="1" />
+      <path d="M 260,405 C 280,398 310,401 335,408" fill="none" stroke="#888888" stroke-width="1" />
+    </g>
+
+    <!-- 9. Pita Putih Tulisan "BIREUEN" (Ribbon Banner) -->
+    <g id="pita-bireuen">
+      <!-- Left Ribbon Fold -->
+      <polygon points="115,480 80,460 95,492 80,520 120,500" fill="#E2E8F0" stroke="#101010" stroke-width="2" />
+      <!-- Right Ribbon Fold -->
+      <polygon points="385,480 420,460 405,492 420,520 380,500" fill="#E2E8F0" stroke="#101010" stroke-width="2" />
+      <!-- Main White Ribbon Body -->
+      <path d="M 115,465 L 385,465 L 375,515 L 125,515 Z" fill="#FFFFFF" stroke="#101010" stroke-width="2.5" />
+      <!-- Red Text BIREUEN -->
+      <text x="250" y="503" text-anchor="middle" class="bireuen-text" font-size="38">BIREUEN</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "SI-BANSOS Kabupaten Bireuen",
+  "description": "Sistem Informasi Bantuan Sosial Dinas Sosial Kabupaten Bireuen",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
