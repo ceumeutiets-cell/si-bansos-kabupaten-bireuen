@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { 
   User, 
   PenerimaBansos, 
@@ -924,6 +925,7 @@ export default function App() {
         </div>
       )}
 
+      <SpeedInsights />
     </div>
   );
 }
